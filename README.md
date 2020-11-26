@@ -33,41 +33,14 @@ python demo.py
 * 每个样本固定10个字符，字符随机截取自语料库中的句子
 * 图片分辨率统一为280x32
 
-图片解压后放置到train/images目录下，描述文件放到train目录下
+#### 2. 数据制作
+
+工具：https://github.com/SeventhBlue/textGenerationTool
 
 #### 2. 训练
 
-``` Bash
-cd train
-python train.py
-```
-
-#### 3. 结果
-
-| val acc | predict | model |
-| -----------| ---------- | -----------|
-| 0.983 | 8ms | 18.9MB |
-
-* GPU: GTX TITAN X
-* Keras Backend: Tensorflow
-
-#### 4. 生成自己的样本
-
-可参考[SynthText_Chinese_version](https://github.com/JarveeLee/SynthText_Chinese_version)，[TextRecognitionDataGenerator](https://github.com/Belval/TextRecognitionDataGenerator)和[text_renderer](https://github.com/Sanster/text_renderer)
-
-## 效果展示
-
-<div>
-<img width="420" height="420" src="https://github.com/YCG09/chinese_ocr/blob/master/demo/demo_detect.jpg"/>
-<img width="420" height="420" src="https://github.com/YCG09/chinese_ocr/blob/master/demo/demo_rec.jpg"/>
-</div>
+densenet+ctc训练：https://github.com/SeventhBlue/denseNetTrain
 
 ## 参考
 
-[1] https://github.com/eragonruan/text-detection-ctpn
-
-[2] https://github.com/senlinuc/caffe_ocr
-
-[3] https://github.com/chineseocr/chinese-ocr
-
-[4] https://github.com/xiaomaxiao/keras_ocr
+[1] https://github.com/YCG09/chinese_ocr
